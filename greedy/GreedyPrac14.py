@@ -8,13 +8,11 @@
 시작 시간과 끝나는 시간은 231-1보다 작거나 같은 자연수 또는 0이다.
 '''
 
-import sys
-
 n = int(input())
 data = []
 
 for _ in range(n):
-    x, y = map(int, sys.stdin.readline().rstrip().split())
+    x, y = map(int, input().split())
     data.append((x, y))
     
 data = sorted(data, key = lambda time : (time[1], time[0]))
